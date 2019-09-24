@@ -40,7 +40,7 @@ public class c_SceneControl : MonoBehaviour {
                 }
                 int index = j * griCols + i;
                 int id = numbers[index];
-                //card.ChangeSprite(id, images[id]);
+                card.ChangeSprite(id, images[id]);
 
                 float posX = (offsetX * i) + startPos.x;
                 float posY = (offsetY * j) + startPos.y;
