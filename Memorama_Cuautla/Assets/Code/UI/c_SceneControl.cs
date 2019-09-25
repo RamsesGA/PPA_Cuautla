@@ -7,33 +7,29 @@ using UnityEngine.UI;
 
 public class c_SceneControl : MonoBehaviour {
 
-    public const int griRows = 2;
-    public const int griCols = 4;
-    public const float offsetX = 4f;
-    public const float offsetY = 5f;
-
+    public const int griRows    = 2;
+    public const int griCols    = 4;
+    public const float offsetX  = 4f;
+    public const float offsetY  = 5f;
+    public int score            = 0;
 
     [SerializeField]
     private c_carta OriginalCard;
     [SerializeField]
     private Sprite[] images;
-
     private c_carta firstReveaLed;
     private c_carta sconReveaLed;
-
     private int _score = 0;
-
     [SerializeField]
     private Text scoreLabel;
-    public int score = 0;
 
-
-    // Start is called before the first frame update
+    //  Unity Methods
     void Start() {
-
         Vector3 startPos = OriginalCard.transform.position;
         int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3 };
+        //
         numbers = shuffleArray(numbers);
+        //
         for (int i = 0; i < griCols; i++)
         {
             for (int j = 0; j < griRows; j++)
@@ -55,13 +51,17 @@ public class c_SceneControl : MonoBehaviour {
                 float posY = (offsetY * j) + startPos.y;
 
                 card.transform.position = new Vector3(posX, posY, startPos.z);
-
             }
         }
-
     }
 
-    //-----
+    //  Getters
+    public bool canReveal
+    {
+        get { return sconReveaLed = null; }
+    }
+
+    //  Unity Methods
     private int[] shuffleArray(int[] numbers)
     {
         int[] newArray = numbers.Clone() as int[];
@@ -77,14 +77,6 @@ public class c_SceneControl : MonoBehaviour {
         return newArray;
     }
 
-    //-----
-    public bool canReveal
-    {
-        get { return sconReveaLed = null; }
-
-    }
-
-    //-----
     public void CardRevealed(c_carta card)
     {
         if (firstReveaLed == null)
@@ -98,7 +90,6 @@ public class c_SceneControl : MonoBehaviour {
         }
     }
 
-    //-----
     private IEnumerator CheckedMatch()
     {
         if (firstReveaLed.id == sconReveaLed.id)

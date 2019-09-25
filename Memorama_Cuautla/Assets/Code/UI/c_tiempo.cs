@@ -4,22 +4,16 @@ using UnityEngine.UI;
 using UnityEngine;
 using System;
 
-public class tiempo : MonoBehaviour
+public class c_Time : MonoBehaviour
 {
-
-    //Variables
-    public Text mostrar_tiempo;         //objeto tipo texto del canvas que mostrara el tiempo restante en pantalla
-
-    private float cronometro;
-
-
-    // Start is called before the first frame update
+    public  Text    mostrar_tiempo;         //objeto tipo texto del canvas que mostrara el tiempo restante en pantalla
+    private float   cronometro;
+    
     void Start()
     {
         cronometro = Time.time;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         //Variables

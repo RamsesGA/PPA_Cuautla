@@ -5,15 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class c_carta : MonoBehaviour
 {
-
+    public  GameObject Carta;
     [SerializeField]
     private c_SceneControl controller;
-
-    [SerializeField]
-    public GameObject Carta;
     private int _id;
 
-    //-----
+    //  Unity methods
     public void OnMouseDown()
     {
         if (Carta.activeSelf)
@@ -23,13 +20,13 @@ public class c_carta : MonoBehaviour
         }
     }
 
-    //-----
+    //  Getters
     public int id
     {
         get { return _id; }
     }
 
-    //-----
+    //  Methods
     public void ChangeSprite(int id, Sprite image)
     {
         _id = id;
