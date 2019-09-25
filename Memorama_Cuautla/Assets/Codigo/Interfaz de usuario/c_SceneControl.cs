@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class c_SceneControl : MonoBehaviour {
 
@@ -16,6 +18,13 @@ public class c_SceneControl : MonoBehaviour {
     [SerializeField]
     private Sprite[] images;
 
+    private c_carta firstReveaLed;
+    private c_carta sconReveaLed;
+
+    private int _score = 0;
+
+    [SerializeField]
+    private Text scoreLabel;
     public int score = 0;
 
 
@@ -48,12 +57,11 @@ public class c_SceneControl : MonoBehaviour {
                 card.transform.position = new Vector3(posX, posY, startPos.z);
 
             }
-
-
         }
 
     }
 
+    //-----
     private int[] shuffleArray(int[] numbers)
     {
         int[] newArray = numbers.Clone() as int[];
@@ -67,11 +75,50 @@ public class c_SceneControl : MonoBehaviour {
             newArray[r] = temp;
         }
         return newArray;
+    }
+
+    //-----
+    public bool canReveal
+    {
+        get { return sconReveaLed = null; }
 
     }
-    // Update is called once per frame
-    void Update()
+
+    //-----
+    public void CardRevealed(c_carta card)
     {
-        
+        if (firstReveaLed == null)
+        {
+            firstReveaLed = card;
+        }
+        else
+        {
+            sconReveaLed = card;
+            StartCoroutine(CheckedMatch());
+        }
+    }
+
+    //-----
+    private IEnumerator CheckedMatch()
+    {
+        if (firstReveaLed.id == sconReveaLed.id)
+        {
+            _score++;
+            scoreLabel.text = "Score: " + _score;
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.5f);
+
+            firstReveaLed.Unreveal();
+            sconReveaLed.Unreveal();
+        }
+        firstReveaLed = null;
+        sconReveaLed = null;
+    }
+
+    void cardCoparion(List<int> _c)
+    {
+
     }
 }
