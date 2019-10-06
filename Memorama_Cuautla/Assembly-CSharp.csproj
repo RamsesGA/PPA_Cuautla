@@ -61,6 +61,7 @@
      <Compile Include="Assets\Codigo\Interfaz de usuario\tiempo.cs" />
      <Compile Include="Assets\Codigo\Nucleo\c_carta.cs" />
      <Compile Include="Assets\Codigo\Nucleo\c_juego.cs" />
+     <Compile Include="Assets\Escenas\Escena_Ramses\Codigos\Maquina_estados.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/ramse/Documents/Universidad/ppa_cuau/PPA_Cuautla/Memorama_Cuautla/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Escenas/SampleScene.unity
+- path: Assets/Escenas/Escena_Ramses/SampleScene_Ramses.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
