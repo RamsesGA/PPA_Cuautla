@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Main_Menu.unity
     guid: a3bc9454e9936c04eb85eb3583d6ec86
   - enabled: 1
-    path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/SampleSceneTests_Ram.unity
+    path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Juego.unity
     guid: a711628b7c4cb4b45b41087262f986a5
   m_configObjects: {}

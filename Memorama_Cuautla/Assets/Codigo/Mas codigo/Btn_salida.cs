@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Botones : MonoBehaviour
+public class Btn_salida : MonoBehaviour
 {
+   public void Salida()
+    {
+        Application.Quit();
+    }
 }

@@ -56,9 +56,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Codigo\Mas codigo\Botones.cs" />
+     <Compile Include="Assets\Codigo\Mas codigo\Btn_salida.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_SceneControl.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_tiempo.cs" />
-     <Compile Include="Assets\Codigo\Mas codigo\Interfaz_control.cs" />
+     <Compile Include="Assets\Codigo\Mas codigo\Menu_script.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\tiempo.cs" />
      <Compile Include="Assets\Codigo\Nucleo\c_carta.cs" />
      <Compile Include="Assets\Codigo\Nucleo\c_juego.cs" />
