@@ -65,6 +65,7 @@
     <Compile Include="Assets\Codigo\Interfaz de usuario\Botones.cs" />
     <Compile Include="Assets\Codigo\Interfaz de usuario\c_SceneControl.cs" />
     <Compile Include="Assets\Codigo\Interfaz de usuario\c_tiempo.cs" />
+    <Compile Include="Assets\Codigo\Interfaz de usuario\Credits.cs" />
     <Compile Include="Assets\Codigo\Interfaz de usuario\Interfaz_control.cs" />
     <Compile Include="Assets\Codigo\Interfaz de usuario\tiempo.cs" />
     <Compile Include="Assets\Codigo\Nucleo\c_carta.cs" />
