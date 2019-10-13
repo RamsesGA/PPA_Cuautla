@@ -9,7 +9,7 @@ public class tiempo : MonoBehaviour
 
     //Variables
     public Text mostrar_tiempo;         //objeto tipo texto del canvas que mostrara el tiempo restante en pantalla
-
+    public UI_control ui_control;
     private float cronometro;
 
 
@@ -22,6 +22,7 @@ public class tiempo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //Variables
         float control_tiempo = Time.time - cronometro;
         string min = ((int)control_tiempo / 60).ToString("00");
