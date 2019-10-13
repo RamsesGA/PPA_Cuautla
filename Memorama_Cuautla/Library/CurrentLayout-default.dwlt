@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 83
+  controlID: 77
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 511, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 0
-  controlID: 82
+  controlID: 150
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 81
+  controlID: 149
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -663,20 +663,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Escenas/Escena_Ramses/Escenas_proyecto
+    - Assets/Archivos
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Escenas/Escena_Ramses/Escenas_proyecto
+  - Assets/Archivos
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\ramse\Documents\Universidad\ppa_cuau\PPA_Cuautla\Memorama_Cuautla
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 262e0000
-    m_LastClickedID: 11814
-    m_ExpandedIDs: 00000000ae2d0000e82d0000042f0000a83000002831000062310000e83100006233000064330000663300006833000000ca9a3b
+    m_SelectedIDs: e2310000
+    m_LastClickedID: 12770
+    m_ExpandedIDs: 00000000a02d0000da2d0000f82e0000a2300000223100005c310000e23100006e33000070330000723300007433000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -704,7 +704,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae2d0000042f0000a83000002831000062310000e831000062330000643300006633000068330000
+    m_ExpandedIDs: 00000000a02d0000f82e0000a2300000223100005c310000e23100006e330000703300007233000074330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -789,9 +789,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 16400000
-      m_LastClickedID: 16406
-      m_ExpandedIDs: cee1fffffae1ffff28e2ffff52e2ffff8ce3ffffd8e4ffff1ae5ffff94e5ffff66e8fffface8ffffd6e8ffff12e9ffff7eedffffa8edffffbceefffffef8ffff58f9ffff82f9ffffb0faffff50fbffff963500008836000092360000c03800001e400000
+      m_SelectedIDs: 96330000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 74fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
