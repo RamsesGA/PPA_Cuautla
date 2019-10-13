@@ -17,11 +17,11 @@ public class UI_control : MonoBehaviour
     {
         if (in_pausa == true)
         {
-            pause_RT.gameobjcet.setactive(true);
+            //pause_RT.gameobjcet.setactive(true);
         }
         else
         {
-            pause_RT.gameobjcet.setactive(false);
+            //pause_RT.gameobjcet.setactive(false);
         }
     }
 }
