@@ -7,10 +7,10 @@ using UnityEngine.UI;
 
 public class DataController : MonoBehaviour {
     public int level;
-    int cardsPerLVL = 3;
+    int cardsPerLVL;
 
-    public int rows = 2;
-    public int cols = 4;
+    public int rows;
+    public int cols;
     public float X = 4f;
     public float Y = 5f;
     public int[] numbers;
@@ -24,9 +24,12 @@ public class DataController : MonoBehaviour {
         level = inLevel;
         // Vamos a hacer un nuevo espacio de memoria basado
         // en el numero de cartas
-        numbers = new int[8/*cardsPerLVL * 2*/];
         switch (level) {
             case 1: {
+                    rows = 2;
+                    cols = 4;
+                    cardsPerLVL = 4;
+                    numbers = new int[cardsPerLVL * 2];
                     for (int i = 0; i < cardsPerLVL * 2; i++)
                     {
                         numbers[i] = (i / 2);
@@ -35,11 +38,29 @@ public class DataController : MonoBehaviour {
                     break;
                 }
 
-            case 2:
-                {
+            case 2: {
+                    rows = 2;
+                    cols = 5;
+                    cardsPerLVL = 5;
+                    numbers = new int[cardsPerLVL * 2];
+                    for (int i = 0; i < cardsPerLVL * 2; i++)
+                    {
+                        numbers[i] = (i / 2);
+                    }
                     break;
                 }
 
+            case 3: {
+                    rows = 3;
+                    cols = 4;
+                    cardsPerLVL = 6;
+                    numbers = new int[cardsPerLVL * 2];
+                    for (int i = 0; i < cardsPerLVL * 2; i++)
+                    {
+                        numbers[i] = (i / 2);
+                    }
+                    break;
+                }
             default:
                 {
                     Debug.Log("Error");
