@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
+
 public class c_SceneControl : MonoBehaviour {
 
-    public const int griRows = 2;
-    public const int griCols = 4;
-    public const float offsetX = 4f;
-    public const float offsetY = 5f;
+    DataController DC;
 
+    public int levelToLoad = 0;
 
     [SerializeField]
     private c_carta OriginalCard;
@@ -27,13 +26,27 @@ public class c_SceneControl : MonoBehaviour {
     private Text scoreLabel;
     public int score = 0;
 
+    int griRows;
+    int griCols;
+    float offsetX;
+    float offsetY;
+
 
     // Start is called before the first frame update
     void Start() {
 
+        checkForData();
+
+        griRows = DC.rows;
+        griCols = DC.cols;
+        offsetX = DC.X;
+        offsetY = DC.Y;
+
+        Debug.Log(griRows);
+
         Vector3 startPos = OriginalCard.transform.position;
-        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3 };
-        numbers = shuffleArray(numbers);
+        
+        DC.numbers = shuffleArray(DC.numbers);
         for (int i = 0; i < griCols; i++)
         {
             for (int j = 0; j < griRows; j++)
@@ -48,7 +61,7 @@ public class c_SceneControl : MonoBehaviour {
                     card = Instantiate(OriginalCard) as c_carta;
                 }
                 int index = j * griCols + i;
-                int id = numbers[index];
+                int id = DC.numbers[index];
                 card.ChangeSprite(id, images[id]);
 
                 float posX = (offsetX * i) + startPos.x;
@@ -85,14 +98,11 @@ public class c_SceneControl : MonoBehaviour {
     }
 
     //-----
-    public void CardRevealed(c_carta card)
-    {
-        if (firstReveaLed == null)
-        {
+    public void CardRevealed(c_carta card) {
+        if (firstReveaLed == null) {
             firstReveaLed = card;
         }
-        else
-        {
+        else {
             sconReveaLed = card;
             StartCoroutine(CheckedMatch());
         }
@@ -117,8 +127,20 @@ public class c_SceneControl : MonoBehaviour {
         sconReveaLed = null;
     }
 
+    //-----
     void cardCoparion(List<int> _c)
     {
 
     }
+
+    //-----
+    private void checkForData()
+    {
+        DC = GameObject.FindObjectOfType<DataController>();
+        if (DC != null)
+        {
+            Debug.Log("YUPI");
+        }
+    }
+
 }
