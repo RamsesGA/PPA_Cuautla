@@ -36,6 +36,7 @@ public class c_carta : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = image;
     }
 
+    //-----
     public void Unreveal()
     {
         Carta.SetActive(true);

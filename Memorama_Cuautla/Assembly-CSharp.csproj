@@ -59,6 +59,7 @@
      <Compile Include="Assets\Codigo\Mas codigo\Btn_salida.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_SceneControl.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_tiempo.cs" />
+     <Compile Include="Assets\Codigo\Mas codigo\Data_Keeper.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Menu_script.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\tiempo.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\UI_control.cs" />
