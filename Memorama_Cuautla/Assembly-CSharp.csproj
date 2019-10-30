@@ -59,7 +59,6 @@
      <Compile Include="Assets\Codigo\Mas codigo\Btn_salida.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_SceneControl.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\c_tiempo.cs" />
-     <Compile Include="Assets\Codigo\Mas codigo\Credits.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Data_Keeper.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Menu_script.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\tiempo.cs" />
@@ -68,7 +67,6 @@
      <Compile Include="Assets\Codigo\Nucleo\c_juego.cs" />
      <Compile Include="Assets\Escenas\Escena_Ramses\Codigos\Maquina_estados.cs" />
      <Compile Include="Assets\Escenas\Escena_Ramses\Codigos\Transiciones_escena.cs" />
-     <Compile Include="Assets\Escenas\Scenes chucho\Code\DataController.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

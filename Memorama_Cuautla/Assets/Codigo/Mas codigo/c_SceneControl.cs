@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-<<<<<<< HEAD
 public class c_SceneControl : MonoBehaviour
 {
     public int level = 0;
@@ -22,14 +21,6 @@ public class c_SceneControl : MonoBehaviour
 
     private c_carta firstReveaLed;
     private c_carta sconReveaLed;
-=======
-
-public class c_SceneControl : MonoBehaviour {
-
-    DataController DC;
-
-    public int levelToLoad = 0;
->>>>>>> origin/features/chucho/Cambios_de_clase
 
     [SerializeField]
     private c_carta OriginalCard;
@@ -40,36 +31,12 @@ public class c_SceneControl : MonoBehaviour {
     private Text scoreLabel;
     public int score = 0;
 
-<<<<<<< HEAD
     void Start()
     {
         Vector3 startPos = OriginalCard.transform.position;
         int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3 };
         numbers = shuffleArray(numbers);
 
-=======
-    int griRows;
-    int griCols;
-    float offsetX;
-    float offsetY;
-
-
-    // Start is called before the first frame update
-    void Start() {
-
-        checkForData();
-
-        griRows = DC.rows;
-        griCols = DC.cols;
-        offsetX = DC.X;
-        offsetY = DC.Y;
-
-        Debug.Log(griRows);
-
-        Vector3 startPos = OriginalCard.transform.position;
-        
-        DC.numbers = shuffleArray(DC.numbers);
->>>>>>> origin/features/chucho/Cambios_de_clase
         for (int i = 0; i < griCols; i++)
         {
             for (int j = 0; j < griRows; j++)
@@ -86,12 +53,8 @@ public class c_SceneControl : MonoBehaviour {
                 }
 
                 int index = j * griCols + i;
-<<<<<<< HEAD
                 int id = numbers[index];
 
-=======
-                int id = DC.numbers[index];
->>>>>>> origin/features/chucho/Cambios_de_clase
                 card.ChangeSprite(id, images[id]);
 
                 float posX = (offsetX * i) + startPos.x;
@@ -111,11 +74,14 @@ public class c_SceneControl : MonoBehaviour {
     }
 
     //-----
-    public void CardRevealed(c_carta card) {
-        if (firstReveaLed == null) {
+    public void CardRevealed(c_carta card)
+    {
+        if (firstReveaLed == null)
+        {
             firstReveaLed = card;
         }
-        else {
+        else
+        {
             sconReveaLed = card;
             StartCoroutine(CheckedMatch());
         }
@@ -157,13 +123,11 @@ public class c_SceneControl : MonoBehaviour {
         sconReveaLed = null;
     }
 
-    //-----
     void cardCoparion(List<int> _c)
     {
 
     }
 
-<<<<<<< HEAD
     public void CheckForDataKeep()
     {
         Data_Keeper dkc;
@@ -183,16 +147,4 @@ public class c_SceneControl : MonoBehaviour {
         }
     }
     
-=======
-    //-----
-    private void checkForData()
-    {
-        DC = GameObject.FindObjectOfType<DataController>();
-        if (DC != null)
-        {
-            Debug.Log("YUPI");
-        }
-    }
-
->>>>>>> origin/features/chucho/Cambios_de_clase
 }
