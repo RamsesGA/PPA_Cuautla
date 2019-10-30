@@ -11,8 +11,8 @@ public class DataController : MonoBehaviour {
 
     public int rows;
     public int cols;
-    public float X = 4f;
-    public float Y = 5f;
+    public float X;
+    public float Y;
     public int[] numbers;
 
     // Start is called before the first frame update
@@ -28,6 +28,8 @@ public class DataController : MonoBehaviour {
             case 1: {
                     rows = 2;
                     cols = 4;
+                    X = 4f;
+                    Y = 5f;
                     cardsPerLVL = 4;
                     numbers = new int[cardsPerLVL * 2];
                     for (int i = 0; i < cardsPerLVL * 2; i++)
@@ -41,6 +43,8 @@ public class DataController : MonoBehaviour {
             case 2: {
                     rows = 2;
                     cols = 5;
+                    X = 3.8f;
+                    Y = 5f;
                     cardsPerLVL = 5;
                     numbers = new int[cardsPerLVL * 2];
                     for (int i = 0; i < cardsPerLVL * 2; i++)
@@ -53,6 +57,8 @@ public class DataController : MonoBehaviour {
             case 3: {
                     rows = 3;
                     cols = 4;
+                    X = 5f;
+                    Y = 2.8f;
                     cardsPerLVL = 6;
                     numbers = new int[cardsPerLVL * 2];
                     for (int i = 0; i < cardsPerLVL * 2; i++)
