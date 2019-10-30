@@ -4,36 +4,24 @@ using UnityEngine;
 
 public class UI_control : MonoBehaviour
 {
-    public static bool in_pausa = false;
-    public GameObject pause_menu;
+    public bool in_pausa = false;
+    
 
-    void Update()
+    public void togglePause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        in_pausa = !in_pausa;
+        makePause();
+    }
+
+    private void makePause()
+    {
+        if (in_pausa == true)
         {
-            if (in_pausa)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            //pause_RT.gameobjcet.setactive(true);
+        }
+        else
+        {
+            //pause_RT.gameobjcet.setactive(false);
         }
     }
-
-    public void Resume()
-    {
-        pause_menu.SetActive(false);
-        Time.timeScale = 1f;
-        in_pausa = false;
-    }
-
-    void Pause()
-    {
-        pause_menu.SetActive(true);
-        Time.timeScale = 0f;
-        in_pausa = true;
-    }
-
 }
