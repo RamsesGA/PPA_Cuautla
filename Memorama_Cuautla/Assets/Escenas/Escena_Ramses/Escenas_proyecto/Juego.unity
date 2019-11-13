@@ -544,12 +544,12 @@ MonoBehaviour:
   loading_from_mainscreen: 0
   OriginalCard: {fileID: 857140028}
   images:
-  - {fileID: 21300000, guid: e810bd8f4edb7b14ab9ec2b6a50cc751, type: 3}
-  - {fileID: 21300000, guid: f52a6010ab274a7419bbd213f63f95de, type: 3}
-  - {fileID: 21300000, guid: 9afb839a272904b468c63fbeae31e34a, type: 3}
-  - {fileID: 21300000, guid: c36301f8b292cd145b775357f157823c, type: 3}
-  - {fileID: 21300000, guid: 5258d065b9361a8468acd4a8703e818d, type: 3}
-  - {fileID: 21300000, guid: c42ed37fef64e814b98ed970477ad3b9, type: 3}
+  - {fileID: 21300000, guid: 3a53f33108cf92640ac851a888b8cf28, type: 3}
+  - {fileID: 21300000, guid: 638b0c8b3668e0d428b263c18383a2e2, type: 3}
+  - {fileID: 21300000, guid: 10874a800fa1eda41adf8a336a8cabbf, type: 3}
+  - {fileID: 21300000, guid: 12b8b4c8d4831974db3b0e97e936c776, type: 3}
+  - {fileID: 21300000, guid: bfe7eee381a0c1145bb90ea0791984d3, type: 3}
+  - {fileID: 21300000, guid: 08a8639af9c77de4cac3f275b052fea4, type: 3}
   scoreLabel: {fileID: 51581086}
   score: 0
 --- !u!4 &738747953
