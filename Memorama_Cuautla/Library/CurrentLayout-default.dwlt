@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 75
+  controlID: 147
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -609,20 +609,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Escenas/Scenes chucho/Escenas_proyecto
+    - Assets/Escenas/Escena_Ramses/Escenas_proyecto
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Escenas/Scenes chucho/Escenas_proyecto
+  - Assets/Escenas/Escena_Ramses/Escenas_proyecto
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\REPOSITORIOS\PPA_Cuautla\Memorama_Cuautla
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c2e0000
-    m_LastClickedID: 11820
-    m_ExpandedIDs: 00000000a42d0000de2d0000042f0000b82f0000b63000003c3100007631000004320000783300007a3300007c3300007e33000000ca9a3b
+    m_SelectedIDs: 722e0000
+    m_LastClickedID: 11890
+    m_ExpandedIDs: 00000000f62d0000302e0000562f00000a300000083100008e310000c831000056320000bc330000be330000c0330000c233000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -650,7 +650,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a42d0000de2d0000042f0000b82f0000b63000003c3100007631000004320000783300007a3300007c3300007e330000
+    m_ExpandedIDs: 00000000f62d0000302e0000562f00000a300000083100008e310000c831000056320000bc330000be330000c0330000c2330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000543400006439000068390000962b0000c6280000202a00005e350000809a0000b42b00006c30000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -735,9 +735,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 32330000
-      m_LastClickedID: 13106
-      m_ExpandedIDs: 74fbffff28330000
+      m_SelectedIDs: 162f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5ef9ffff88f9ffffb2f9ffffe8f9ffff12faffff3cfaffff60faffff84faffffa8faffff66fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

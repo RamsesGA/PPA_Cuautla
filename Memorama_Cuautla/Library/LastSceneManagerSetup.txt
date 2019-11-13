@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Escenas/Scenes chucho/Escenas_proyecto/Menu_lvl_TEST.unity
+- path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Main_Menu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
