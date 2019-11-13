@@ -175,7 +175,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b4a18c0d8000fe84d9eeadf53e7b44d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee96dc832230010459d468fe009fa0e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -537,19 +537,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099f57093f6f0dd408bce1bc216fccd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
-  level_to_load: 0
-  number_of_cards: 0
-  local_data_keep: {fileID: 0}
-  loading_from_mainscreen: 0
   OriginalCard: {fileID: 857140028}
   images:
-  - {fileID: 21300000, guid: e810bd8f4edb7b14ab9ec2b6a50cc751, type: 3}
-  - {fileID: 21300000, guid: f52a6010ab274a7419bbd213f63f95de, type: 3}
-  - {fileID: 21300000, guid: 9afb839a272904b468c63fbeae31e34a, type: 3}
-  - {fileID: 21300000, guid: c36301f8b292cd145b775357f157823c, type: 3}
-  - {fileID: 21300000, guid: 5258d065b9361a8468acd4a8703e818d, type: 3}
-  - {fileID: 21300000, guid: c42ed37fef64e814b98ed970477ad3b9, type: 3}
+  - {fileID: 21300000, guid: 4ca6e0ec767b5294f84d7f4d55063ad8, type: 3}
+  - {fileID: 21300000, guid: 702519b86da9b884a913aaeead7fd63a, type: 3}
+  - {fileID: 21300000, guid: 10d6b586570117743b0eca66a8acfd51, type: 3}
+  - {fileID: 21300000, guid: 222a5da40bbb4ed4f86586010302db96, type: 3}
+  - {fileID: 21300000, guid: e75dd0aa9956d3444b001ae626069b81, type: 3}
+  - {fileID: 21300000, guid: 0e835989c13487f40ae1e3cf689665a7, type: 3}
   scoreLabel: {fileID: 51581086}
   score: 0
 --- !u!4 &738747953
@@ -739,7 +734,7 @@ SpriteRenderer:
   m_Size: {x: 1.77, y: 2.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &857140030
