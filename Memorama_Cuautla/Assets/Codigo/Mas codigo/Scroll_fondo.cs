@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class Scroll_fondo : MonoBehaviour
 {
-    private Rigidbody2D rigidBody2D;
-    public float scrollSpeed = 1.0f;
+    public float speed;
+    public SpriteRenderer spriteR;
 
-    private void Awake(){
-        rigidBody2D = GetComponent<Rigidbody2D>();
+    void Start() {
     }
 
-
-    void Start(){
-        rigidBody2D.velocity = new Vector2(scrollSpeed, 0);
-    }
-
-    void Update(){
+    void Update() {
     }
 }
