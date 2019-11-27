@@ -539,21 +539,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OriginalCard: {fileID: 857140028}
   images:
-<<<<<<< HEAD
   - {fileID: 21300000, guid: 4ca6e0ec767b5294f84d7f4d55063ad8, type: 3}
   - {fileID: 21300000, guid: 702519b86da9b884a913aaeead7fd63a, type: 3}
   - {fileID: 21300000, guid: 10d6b586570117743b0eca66a8acfd51, type: 3}
   - {fileID: 21300000, guid: 222a5da40bbb4ed4f86586010302db96, type: 3}
   - {fileID: 21300000, guid: e75dd0aa9956d3444b001ae626069b81, type: 3}
   - {fileID: 21300000, guid: 0e835989c13487f40ae1e3cf689665a7, type: 3}
-=======
-  - {fileID: 21300000, guid: 3a53f33108cf92640ac851a888b8cf28, type: 3}
-  - {fileID: 21300000, guid: 638b0c8b3668e0d428b263c18383a2e2, type: 3}
-  - {fileID: 21300000, guid: 10874a800fa1eda41adf8a336a8cabbf, type: 3}
-  - {fileID: 21300000, guid: 12b8b4c8d4831974db3b0e97e936c776, type: 3}
-  - {fileID: 21300000, guid: bfe7eee381a0c1145bb90ea0791984d3, type: 3}
-  - {fileID: 21300000, guid: 08a8639af9c77de4cac3f275b052fea4, type: 3}
->>>>>>> Features/Ramses/Cambios_de_clase
   scoreLabel: {fileID: 51581086}
   score: 0
 --- !u!4 &738747953
