@@ -3,7 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Btn_salida
     - DataController
+    - Data_Keeper
     - Menu_script
+    - Repetir_fondo
+    - Scroll_fondo
     - UI_control
     - c_SceneControl
     - c_carta
@@ -27,6 +30,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -36,7 +40,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Escenas/Scenes chucho/Escenas_proyecto/Juego_TEST.unity:
+    Assets/Escenas/Escena_Ramses/Escenas_proyecto/Juego.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -72,19 +76,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10310}
     - Class: 114
-      Script: {instanceID: 10696}
+      Script: {instanceID: 10700}
     - Class: 114
-      Script: {instanceID: 10746}
+      Script: {instanceID: 10750}
     - Class: 114
-      Script: {instanceID: 10816}
+      Script: {instanceID: 10820}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11202}
     - Class: 114
-      Script: {instanceID: 11258}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11588}
+      Script: {instanceID: 11594}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -101,7 +105,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Escenas/Scenes chucho/Escenas_proyecto/Main_Menu_TEST.unity:
+    Assets/Escenas/Escena_Ramses/Escenas_proyecto/Main_Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -115,6 +119,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -135,23 +143,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10330}
     - Class: 114
-      Script: {instanceID: 10432}
+      Script: {instanceID: 10378}
     - Class: 114
-      Script: {instanceID: 10696}
+      Script: {instanceID: 10434}
     - Class: 114
-      Script: {instanceID: 10926}
+      Script: {instanceID: 10700}
     - Class: 114
-      Script: {instanceID: 10940}
+      Script: {instanceID: 10930}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 10944}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11202}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11588}
+      Script: {instanceID: 11480}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11594}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -168,7 +180,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Escenas/Scenes chucho/Escenas_proyecto/Menu_lvl_TEST.unity:
+    Assets/Escenas/Escena_Ramses/Escenas_proyecto/Menu_lvl.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -194,15 +206,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10310}
     - Class: 114
-      Script: {instanceID: 10696}
+      Script: {instanceID: 10512}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 10700}
     - Class: 114
-      Script: {instanceID: 11198}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11202}
     - Class: 114
-      Script: {instanceID: 11588}
+      Script: {instanceID: 11594}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -412,6 +424,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: b8a025422a11c1de812bac762766499a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scroll_fondo
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -428,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 578aded2641d43bf28f12674f03f4161
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataController
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -574,12 +598,6 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Credits
-  - hash:
-      serializedVersion: 2
       Hash: 2461851e416a4c562a97e3d88c0d53a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -604,10 +622,10 @@ ScriptsOnlyBuild:
     className: Maquina_estados
   - hash:
       serializedVersion: 2
-      Hash: 578aded2641d43bf28f12674f03f4161
+      Hash: 0719254ae85c0106cb3cf19222e0337c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DataController
+    className: Data_Keeper
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -620,6 +638,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Repetir_fondo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -664,6 +688,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Credits
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -700,7 +730,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Escenas/Scenes chucho/Escenas_proyecto/Main_Menu_TEST.unity
-  - Assets/Escenas/Scenes chucho/Escenas_proyecto/Juego_TEST.unity
-  - Assets/Escenas/Scenes chucho/Escenas_proyecto/Menu_lvl_TEST.unity
-  playerPath: D:/CACA AQUI/BUILDS/Holis.apk
+  - Assets/Escenas/Escena_Ramses/Escenas_proyecto/Main_Menu.unity
+  - Assets/Escenas/Escena_Ramses/Escenas_proyecto/Menu_lvl.unity
+  - Assets/Escenas/Escena_Ramses/Escenas_proyecto/Juego.unity
+  playerPath: D:/CACA AQUI/BUILDS/Memorama Cuautla.apk

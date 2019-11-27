@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI_control : MonoBehaviour
-{
+public class UI_control : MonoBehaviour {
     public static bool in_pausa = false;
     public GameObject pause_menu;
 

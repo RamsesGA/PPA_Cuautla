@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class c_ActGame : MonoBehaviour {
+public class c_juego : MonoBehaviour {
 
     public short m_CardsInGame = 5;
     public short m_MatchesReached;
     public short m_PosibleMatches;
-    public int m_Points;
+    public float m_Points;
     const int m_PointsPerMatch = 150;
     public short m_TriesFailed;
     const int m_PointsFailed = -5;
@@ -21,8 +21,8 @@ public class c_ActGame : MonoBehaviour {
     void countPoints() {
 
         //La puntuacion se ira contando apartir de los intentos fallidos, combinaciones y el tiempo que se tardó el jugador
-        m_Points = (m_MatchesReached * m_PointsPerMatch) + (m_TriesFailed + m_PointsFailed); //Falta el tiempo  
-
+        m_Points = ((m_MatchesReached * m_PointsPerMatch) + (m_TriesFailed + m_PointsFailed) * m_Time.control_tiempo); //Falta el tiempo  
+        //GetComponent<Text>().text = m_Points.ToString();
     }
 
 

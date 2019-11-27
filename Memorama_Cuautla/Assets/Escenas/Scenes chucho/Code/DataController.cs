@@ -15,9 +15,15 @@ public class DataController : MonoBehaviour {
     public float Y;
     public int[] numbers;
 
+
     // Start is called before the first frame update
     void Start() {
         DontDestroyOnLoad(this.gameObject);  
+    }
+
+    public void destObject()
+    {
+        Object.Destroy(this.gameObject);
     }
 
     public void setLVL(int inLevel) {

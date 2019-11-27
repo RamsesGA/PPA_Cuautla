@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Escenas/Scenes chucho/Escenas_proyecto/Main_Menu_TEST.unity
-    guid: c2e6259d9b52bcc4e8088a75b1d5862d
+    path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Main_Menu.unity
+    guid: a3bc9454e9936c04eb85eb3583d6ec86
   - enabled: 1
-    path: Assets/Escenas/Scenes chucho/Escenas_proyecto/Juego_TEST.unity
-    guid: 93fdf039f9033cc4fb0100e5206495de
+    path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Menu_lvl.unity
+    guid: dc6b7157a8c5aeb49bdeb4ce012bdad5
   - enabled: 1
-    path: Assets/Escenas/Scenes chucho/Escenas_proyecto/Menu_lvl_TEST.unity
-    guid: c6843213db8cb294897b1d48efcb26bb
+    path: Assets/Escenas/Escena_Ramses/Escenas_proyecto/Juego.unity
+    guid: a711628b7c4cb4b45b41087262f986a5
   m_configObjects: {}

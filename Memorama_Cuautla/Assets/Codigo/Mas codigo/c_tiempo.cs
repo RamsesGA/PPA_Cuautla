@@ -11,6 +11,7 @@ public class c_Time : MonoBehaviour
     public Text mostrar_tiempo;         //objeto tipo texto del canvas que mostrara el tiempo restante en pantalla
 
     private float cronometro;
+    public float control_tiempo;
     
     
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class c_Time : MonoBehaviour
     {
         //Variables
 
-        float control_tiempo = Time.time - cronometro;
+        control_tiempo = Time.time - cronometro;
         string min = ((int)control_tiempo / 60).ToString("00");
         string seg = (control_tiempo % 60).ToString("00");
         string mili_seg = ((control_tiempo * 100) % 100).ToString("00");

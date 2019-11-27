@@ -10,6 +10,8 @@ public class c_SceneControl : MonoBehaviour {
 
     DataController DC;
 
+    c_Score SC;     //ScoreController
+
     public int levelToLoad = 0;
 
     [SerializeField]
@@ -30,6 +32,7 @@ public class c_SceneControl : MonoBehaviour {
     int griCols;
     float offsetX;
     float offsetY;
+    public int cardsInGame;
 
 
     // Start is called before the first frame update
@@ -63,7 +66,7 @@ public class c_SceneControl : MonoBehaviour {
                 int index = j * griCols + i;
                 int id = DC.numbers[index];
                 card.ChangeSprite(id, images[id]);
-
+                cardsInGame++;
                 float posX = (offsetX * i) + startPos.x;
                 float posY = (offsetY * j) + startPos.y;
 
@@ -71,7 +74,7 @@ public class c_SceneControl : MonoBehaviour {
 
             }
         }
-
+        DC.destObject();
     }
 
     //-----
@@ -115,6 +118,7 @@ public class c_SceneControl : MonoBehaviour {
         {
             _score++;
             scoreLabel.text = "Score: " + _score;
+            SC.m_MatchesReached++;
         }
         else
         {
@@ -122,6 +126,7 @@ public class c_SceneControl : MonoBehaviour {
 
             firstReveaLed.Unreveal();
             sconReveaLed.Unreveal();
+            SC.m_TriesFailed++;
         }
         firstReveaLed = null;
         sconReveaLed = null;
