@@ -61,8 +61,8 @@
      <Compile Include="Assets\Codigo\Mas codigo\c_tiempo.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Data_Keeper.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Menu_script.cs" />
-     <Compile Include="Assets\Codigo\Mas codigo\Repetir_fondo.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\Scroll_fondo.cs" />
+     <Compile Include="Assets\Codigo\Mas codigo\Sonido_Btn.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\tiempo.cs" />
      <Compile Include="Assets\Codigo\Mas codigo\UI_control.cs" />
      <Compile Include="Assets\Codigo\Nucleo\c_carta.cs" />
