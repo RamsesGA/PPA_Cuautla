@@ -1,4 +1,0 @@
-#Wed Nov 27 15:03:53 CST 2019
-base.0=D\:\\REPOSITORIOS\\PPA_Cuautla\\Memorama_Cuautla\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
